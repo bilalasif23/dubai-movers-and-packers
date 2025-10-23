@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Dubai Movers and Packers | Professional Moving Company UAE</title>
+
+<!-- AOS Animation Library -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; font-family:'Poppins',sans-serif; }
+  body { background:#f4f7fb; color:#333; overflow-x:hidden; }
+
+  header {
+    background:#003f7d;
+    color:#fff;
+    text-align:center;
+    padding:15px 0;
+    font-size:24px;
+    letter-spacing:1px;
+    font-weight:600;
+  }
+
+  nav {
+    background:#00529b;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+  }
+  nav a {
+    color:#fff;
+    text-decoration:none;
+    padding:15px 20px;
+    transition:0.3s;
+  }
+  nav a:hover { background:#007bff; }
+
+  .hero {
+    background:url('https://images.pexels.com/photos/7464703/pexels-photo-7464703.jpeg?auto=compress&cs=tinysrgb&w=1600') center/cover no-repeat;
+    height:85vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    color:#fff;
+    text-align:center;
+    position:relative;
+  }
+  .hero::after {
+    content:'';
+    position:absolute;
+    top:0;left:0;width:100%;height:100%;
+    background:rgba(0,0,0,0.5);
+  }
+  .hero-content {
+    position:relative;
+    z-index:1;
+    animation: fadeInUp 2s ease-out;
+  }
+  @keyframes fadeInUp {
+    from {opacity:0;transform:translateY(50px);}
+    to {opacity:1;transform:translateY(0);}
+  }
+  .hero h1 {
+    font-size:52px;
+    font-weight:700;
+    margin-bottom:15px;
+  }
+  .hero h1 span {
+    color:#00bfff;
+    animation: colorPulse 3s infinite alternate;
+  }
+  @keyframes colorPulse {
+    0%{color:#00bfff;}
+    100%{color:#ffcc00;}
+  }
+  .hero p { font-size:20px; margin-bottom:20px; }
+  .hero button {
+    background:#007bff;
+    color:#fff;
+    padding:14px 30px;
+    border:none;
+    border-radius:5px;
+    font-size:18px;
+    cursor:pointer;
+    transition:0.3s;
+  }
+  .hero button:hover { background:#ffcc00; color:#000; }
+
+  section { padding:70px 20px; max-width:1100px; margin:auto; }
+
+  h2 {
+    color:#003f7d;
+    text-align:center;
+    margin-bottom:40px;
+    font-size:34px;
+    position:relative;
+  }
+  h2::after {
+    content:'';
+    width:80px;
+    height:4px;
+    background:#00bfff;
+    display:block;
+    margin:10px auto 0;
+    border-radius:3px;
+  }
+
+  .about p {
+    text-align:center;
+    font-size:18px;
+    line-height:1.7;
+    color:#444;
+  }
+
+  .services-grid {
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+  }
+  .service {
+    background:#fff;
+    border-radius:10px;
+    box-shadow:0 4px 15px rgba(0,0,0,0.1);
+    text-align:center;
+    padding:25px;
+    transition:transform 0.3s;
+  }
+  .service:hover { transform:translateY(-5px); }
+  .service img {
+    width:100%;
+    height:180px;
+    object-fit:cover;
+    border-radius:10px;
+  }
+  .service h3 {
+    color:#00529b;
+    margin:15px 0 10px;
+  }
+
+  .gallery img {
+    width:100%;
+    border-radius:10px;
+    margin-bottom:20px;
+  }
+
+  .reviews p {
+    background:#eef5ff;
+    border-left:5px solid #007bff;
+    padding:15px;
+    border-radius:5px;
+    font-style:italic;
+    margin-bottom:15px;
+  }
+
+  .contact p {
+    text-align:center;
+    font-size:18px;
+    margin-bottom:10px;
+  }
+
+  footer {
+    background:#003f7d;
+    color:#fff;
+    text-align:center;
+    padding:15px;
+    font-size:15px;
+  }
+
+  .call-btn, .whatsapp-btn {
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    text-align:center;
+    font-size:26px;
+    color:#fff;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    box-shadow:0 4px 10px rgba(0,0,0,0.3);
+    cursor:pointer;
+    z-index:999;
+  }
+  .call-btn { background:#007bff; bottom:90px; }
+  .whatsapp-btn { background:#25d366; }
+
+  @media(max-width:768px){
+    .hero h1{font-size:34px;}
+    .hero p{font-size:16px;}
+  }
+</style>
+</head>
+
+<body>
+
+<header>Dubai Movers and Packers</header>
+<nav>
+  <a href="#home">Home</a>
+  <a href="#about">About</a>
+  <a href="#services">Services</a>
+  <a href="#gallery">Gallery</a>
+  <a href="#reviews">Reviews</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<section class="hero" id="home">
+  <div class="hero-content">
+    <h1>Professional <span>Movers</span> & Packers in UAE</h1>
+    <p>We make moving easy, safe, and stress-free across the Emirates.</p>
+    <button onclick="window.location.href='tel:+923436391346'">Call Us Now</button>
+  </div>
+</section>
+
+<section class="about" id="about" data-aos="fade-up">
+  <h2>About Us</h2>
+  <p>Dubai Movers and Packers provides top-quality moving and relocation services across the UAE. With experienced staff and reliable logistics, we handle local and international moves, packing, storage, and office relocation — ensuring complete customer satisfaction every time.</p>
+</section>
+
+<section class="services" id="services" data-aos="fade-up">
+  <h2>Our Services</h2>
+  <div class="services-grid">
+    <div class="service" data-aos="zoom-in">
+      <img src="https://images.pexels.com/photos/7464703/pexels-photo-7464703.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="">
+      <h3>Home Relocation</h3>
+      <p>We pack and move your household safely and efficiently across all Emirates.</p>
+    </div>
+    <div class="service" data-aos="zoom-in">
+      <img src="https://images.pexels.com/photos/4246062/pexels-photo-4246062.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="">
+      <h3>Office Shifting</h3>
+      <p>Minimize downtime with our fast and secure office relocation services.</p>
+    </div>
+    <div class="service" data-aos="zoom-in">
+      <img src="https://images.pexels.com/photos/5025666/pexels-photo-5025666.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="">
+      <h3>Packing & Unpacking</h3>
+      <p>High-quality packing materials keep your items protected during the move.</p>
+    </div>
+    <div class="service" data-aos="zoom-in">
+      <img src="https://images.pexels.com/photos/7464707/pexels-photo-7464707.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="">
+      <h3>Storage Solutions</h3>
+      <p>Secure, clean, and climate-controlled storage for your peace of mind.</p>
+    </div>
+  </div>
+</section>
+
+<section class="gallery" id="gallery" data-aos="fade-up">
+  <h2>Our Gallery</h2>
+  <img src="https://images.pexels.com/photos/7464708/pexels-photo-7464708.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="">
+  <img src="https://images.pexels.com/photos/5025669/pexels-photo-5025669.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="">
+</section>
+
+<section class="reviews" id="reviews" data-aos="fade-up">
+  <h2>Customer Reviews</h2>
+  <p>"Dubai Movers made our relocation smooth and stress-free! Highly recommended!"</p>
+  <p>"Professional team, fast service, and affordable pricing. Great work!"</p>
+  <p>"They handled all my furniture with great care. Excellent experience!"</p>
+</section>
+
+<section class="contact" id="contact" data-aos="fade-up">
+  <h2>Contact Us</h2>
+  <p>Email: <a href="mailto:asifbilal957@gmail.com">asifbilal957@gmail.com</a></p>
+  <p>Phone: <a href="tel:+923436391346">+92 343 6391346</a></p>
+  <p>Location: United Arab Emirates</p>
+</section>
+
+<footer>
+  &copy; 2025 Dubai Movers and Packers | Designed by Bilal Asif
+</footer>
+
+<a href="tel:+923436391346" class="call-btn">📞</a>
+<a href="https://wa.me/923436391346" class="whatsapp-btn">💬</a>
+
+<!-- JS Libraries -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000,
+    once: true
+  });
+
+  // Smooth scroll
+  document.querySelectorAll('nav a').forEach(anchor => {
+    anchor.addEventListener('click', function(e){
+      e.preventDefault();
+      document.querySelector(this.getAttribute('href')).scrollIntoView({behavior:'smooth'});
+    });
+  });
+</script>
+
+</body>
+</html>
